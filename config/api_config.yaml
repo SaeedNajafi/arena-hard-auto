@@ -17,6 +17,14 @@ gpt-4.1:
     max_tokens: 32000
     temperature: 0.0
 
+gpt-4.1-mini:
+    model: gpt-4.1-mini
+    endpoints: null
+    api_type: openai
+    parallel: 8
+    max_tokens: 32000
+    temperature: 0.0
+
 # gemini-2.5:
 #     model: gemini-2.5-pro-preview-03-25
 #     endpoints: null
@@ -86,3 +94,60 @@ gemma-3-27b-it:
     parallel: 128
     max_tokens: 8196
     temperature: 0.0
+
+# Local inference examples
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-v6:
+    model: /scratch/ssd004/scratch/snajafi/model-weights/llama-3.2-1b-dpo-v6/llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-v6_checkpoint-1338_full_model
+    endpoints: null
+    api_type: sglang
+    local_engine: True
+    temperature: 0.001
+    max_tokens: 1024
+
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-with-len-norm-v6:
+    model: /scratch/ssd004/scratch/snajafi/model-weights/llama-3.2-1b-dpo-v6/llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-with-len-norm-v6_checkpoint-1338_full_model
+    endpoints: null
+    api_type: sglang
+    local_engine: True
+    temperature: 0.001
+    max_tokens: 1024
+
+llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-v6:
+    model: /scratch/ssd004/scratch/snajafi/model-weights/llama-3.2-1b-simpo-v6/llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-v6_checkpoint-1338_full_model
+    endpoints: null
+    api_type: sglang
+    local_engine: True
+    temperature: 0.001
+    max_tokens: 1024
+
+llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-no-len-norm-v6:
+    model: /scratch/ssd004/scratch/snajafi/model-weights/llama-3.2-1b-simpo-v6/llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-no-len-norm-v6_checkpoint-1338_full_model
+    endpoints: null
+    api_type: sglang
+    local_engine: True
+    temperature: 0.001
+    max_tokens: 1024
+
+llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-v6:
+    model: /scratch/ssd004/scratch/snajafi/model-weights/llama-3.2-1b-mmpo-v6/llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-v6_checkpoint-1338_full_model
+    endpoints: null
+    api_type: sglang
+    local_engine: True
+    temperature: 0.001
+    max_tokens: 1024
+
+llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-with-len-norm-v6:
+    model: /scratch/ssd004/scratch/snajafi/model-weights/llama-3.2-1b-mmpo-v6/llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-with-len-norm-v6_checkpoint-1338_full_model
+    endpoints: null
+    api_type: sglang
+    local_engine: True
+    temperature: 0.001
+    max_tokens: 1024
+
+llama3.2-1b-sftdatasetv3-sft-checkpoint-111000:
+    model: /scratch/ssd004/scratch/snajafi/model-weights/llama3.2-1b-sftdatasetv3-sft-checkpoint-111000
+    endpoints: null
+    api_type: sglang
+    local_engine: True
+    temperature: 0.001
+    max_tokens: 1024

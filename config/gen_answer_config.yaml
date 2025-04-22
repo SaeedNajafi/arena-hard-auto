@@ -4,4 +4,11 @@ bench_name: arena-hard-v2.0
 # a list of model to generate answers
 model_list:
   # - deepseek-r1
+  - llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-v6
+  - llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-with-len-norm-v6
+  - llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-v6
+  - llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-no-len-norm-v6
+  - llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-v6
+  - llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-with-len-norm-v6
+  - llama3.2-1b-sftdatasetv3-sft-checkpoint-111000
   
